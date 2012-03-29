@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omega", "Omega\Omega.csproj", "{BE2FAFF6-7852-4F30-8AB8-AD85D3FD2843}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE2FAFF6-7852-4F30-8AB8-AD85D3FD2843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2FAFF6-7852-4F30-8AB8-AD85D3FD2843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2FAFF6-7852-4F30-8AB8-AD85D3FD2843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2FAFF6-7852-4F30-8AB8-AD85D3FD2843}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

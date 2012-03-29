@@ -1,0 +1,299 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE2FAFF6-7852-4F30-8AB8-AD85D3FD2843}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Omega</RootNamespace>
+    <AssemblyName>Omega</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/Omega/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurationForm.Designer.cs">
+      <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerBL.cs" />
+    <Compile Include="ContainerChooseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerChooseForm.Designer.cs">
+      <DependentUpon>ContainerChooseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerDataSet.cs">
+      <DependentUpon>ContainerDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContainerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContainerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerFormTypeEnum.cs" />
+    <Compile Include="ContainerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerListForm.Designer.cs">
+      <DependentUpon>ContainerListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerRecordForm.Designer.cs">
+      <DependentUpon>ContainerRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerTypeBL.cs" />
+    <Compile Include="ContainerTypeFormTypeEnum.cs" />
+    <Compile Include="ContainerTypeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerTypeListForm.Designer.cs">
+      <DependentUpon>ContainerTypeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerTypeRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerTypeRecordForm.Designer.cs">
+      <DependentUpon>ContainerTypeRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CotainerKindEnum.cs" />
+    <Compile Include="EnumUtils.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeasurementBL.cs" />
+    <Compile Include="MeasurementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeasurementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MyLib\BL\DataColumnExtProperties.cs" />
+    <Compile Include="MyLib\BL\DataSetInitializer.cs" />
+    <Compile Include="MyLib\BL\LogicManager.cs" />
+    <Compile Include="MyLib\DL\DataManager.cs" />
+    <Compile Include="MyLib\DL\DataManagerBase.cs" />
+    <Compile Include="MyLib\DL\SQLSelect.cs" />
+    <Compile Include="MyLib\UI\Controls\MyComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyLib\UI\Controls\MyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigurationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerChooseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContainerChooseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerListForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContainerListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerRecordForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContainerRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerTypeListForm.resx">
+      <DependentUpon>ContainerTypeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerTypeRecordForm.resx">
+      <DependentUpon>ContainerTypeRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegistryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ContainerDataSet.xsc">
+      <DependentUpon>ContainerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ContainerDataSet.xsd">
+      <SubType>
+      </SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContainerDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ContainerDataSet.xss">
+      <DependentUpon>ContainerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MeasurementDataSet.xsc">
+      <DependentUpon>MeasurementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MeasurementDataSet.xsd">
+      <SubType>
+      </SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MeasurementDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MeasurementDataSet.xss">
+      <DependentUpon>MeasurementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RegistryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistryForm.Designer.cs">
+      <DependentUpon>RegistryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RS232.cs" />
+    <Compile Include="SystemConfigBL.cs" />
+    <Compile Include="SystemConfigDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemConfigDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransmissionCotroller.cs" />
+    <Compile Include="WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inprogress.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail_find.png" />
+    <None Include="Resources\22.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\01.png" />
+    <None Include="Resources\agt_uninstall-product.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\configure.png" />
+    <None Include="Resources\1day.png" />
+    <None Include="SystemConfigDataSet.xsc">
+      <DependentUpon>SystemConfigDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SystemConfigDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemConfigDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SystemConfigDataSet.xss">
+      <DependentUpon>SystemConfigDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ktip.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

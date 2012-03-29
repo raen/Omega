@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SystemConfigDataSet" targetNamespace="http://tempuri.org/SystemConfigDataSet.xsd" xmlns:mstns="http://tempuri.org/SystemConfigDataSet.xsd" xmlns="http://tempuri.org/SystemConfigDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SystemConfigDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="SystemConfigDataSet" msprop:Generator_UserDSName="SystemConfigDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SystemConfig" msprop:Generator_UserTableName="SystemConfig" msprop:Generator_RowDeletedName="SystemConfigRowDeleted" msprop:Generator_TableClassName="SystemConfigDataTable" msprop:Generator_RowChangedName="SystemConfigRowChanged" msprop:Generator_RowClassName="SystemConfigRow" msprop:Generator_RowChangingName="SystemConfigRowChanging" msprop:Generator_RowEvArgName="SystemConfigRowChangeEvent" msprop:Generator_RowEvHandlerName="SystemConfigRowChangeEventHandler" msprop:Generator_TablePropName="SystemConfig" msprop:Generator_TableVarName="tableSystemConfig" msprop:Generator_RowDeletingName="SystemConfigRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SystemConfigId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="SystemConfigId" msprop:Generator_ColumnPropNameInRow="SystemConfigId" msprop:Generator_ColumnVarNameInTable="columnSystemConfigId" msprop:Generator_ColumnPropNameInTable="SystemConfigIdColumn" type="xs:int" />
+              <xs:element name="ComName" msprop:Generator_UserColumnName="ComName" msprop:Generator_ColumnPropNameInRow="ComName" msprop:Generator_ColumnVarNameInTable="columnComName" msprop:Generator_ColumnPropNameInTable="ComNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SystemConfig" />
+      <xs:field xpath="mstns:SystemConfigId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ContainerDataSet" targetNamespace="http://tempuri.org/ContainerDataSet.xsd" xmlns:mstns="http://tempuri.org/ContainerDataSet.xsd" xmlns="http://tempuri.org/ContainerDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dataConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dataConnectionString (Settings)" PropertyReference="ApplicationSettings.Omega.Properties.Settings.GlobalReference.Default.dataConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dataConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="dataConnectionString1 (Settings)" PropertyReference="ApplicationSettings.Omega.Properties.Settings.GlobalReference.Default.dataConnectionString1" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ContainerDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ContainerDataSet" msprop:Generator_DataSetName="ContainerDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Container" msprop:Generator_UserTableName="Container" msprop:Generator_RowDeletedName="ContainerRowDeleted" msprop:Generator_RowChangedName="ContainerRowChanged" msprop:Generator_RowClassName="ContainerRow" msprop:Generator_RowChangingName="ContainerRowChanging" msprop:Generator_RowEvArgName="ContainerRowChangeEvent" msprop:Generator_RowEvHandlerName="ContainerRowChangeEventHandler" msprop:Generator_TableClassName="ContainerDataTable" msprop:Generator_TableVarName="tableContainer" msprop:Generator_RowDeletingName="ContainerRowDeleting" msprop:Generator_TablePropName="Container">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContainerId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ContainerId" msprop:Generator_ColumnVarNameInTable="columnContainerId" msprop:Generator_ColumnPropNameInRow="ContainerId" msprop:Generator_ColumnPropNameInTable="ContainerIdColumn" type="xs:long" />
+              <xs:element name="ContainerName" msprop:Generator_UserColumnName="ContainerName" msprop:Generator_ColumnVarNameInTable="columnContainerName" msprop:Generator_ColumnPropNameInRow="ContainerName" msprop:Generator_ColumnPropNameInTable="ContainerNameColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContainerNumber" msprop:Generator_UserColumnName="ContainerNumber" msprop:Generator_ColumnVarNameInTable="columnContainerNumber" msprop:Generator_ColumnPropNameInRow="ContainerNumber" msprop:Generator_ColumnPropNameInTable="ContainerNumberColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ContainerType" msprop:Generator_UserColumnName="ContainerType" msprop:Generator_ColumnPropNameInRow="ContainerType" msprop:Generator_ColumnVarNameInTable="columnContainerType" msprop:Generator_ColumnPropNameInTable="ContainerTypeColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="LiquidName" msprop:Generator_UserColumnName="LiquidName" msprop:Generator_ColumnVarNameInTable="columnLiquidName" msprop:Generator_ColumnPropNameInRow="LiquidName" msprop:Generator_ColumnPropNameInTable="LiquidNameColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaxHeight" msprop:Generator_UserColumnName="MaxHeight" msprop:Generator_ColumnVarNameInTable="columnMaxHeight" msprop:Generator_ColumnPropNameInRow="MaxHeight" msprop:Generator_ColumnPropNameInTable="MaxHeightColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="MinHeight" msprop:Generator_UserColumnName="MinHeight" msprop:Generator_ColumnVarNameInTable="columnMinHeight" msprop:Generator_ColumnPropNameInRow="MinHeight" msprop:Generator_ColumnPropNameInTable="MinHeightColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IsCapacityGrow" msprop:Generator_UserColumnName="IsCapacityGrow" msprop:Generator_ColumnVarNameInTable="columnIsCapacityGrow" msprop:Generator_ColumnPropNameInRow="IsCapacityGrow" msprop:Generator_ColumnPropNameInTable="IsCapacityGrowColumn" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="CapacityDelivered" msprop:Generator_UserColumnName="CapacityDelivered" msprop:Generator_ColumnVarNameInTable="columnCapacityDelivered" msprop:Generator_ColumnPropNameInRow="CapacityDelivered" msprop:Generator_ColumnPropNameInTable="CapacityDeliveredColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="CapacityDeliveredDate" msprop:Generator_UserColumnName="CapacityDeliveredDate" msprop:Generator_ColumnVarNameInTable="columnCapacityDeliveredDate" msprop:Generator_ColumnPropNameInRow="CapacityDeliveredDate" msprop:Generator_ColumnPropNameInTable="CapacityDeliveredDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="eToMeasure" msprop:Generator_UserColumnName="eToMeasure" msprop:Generator_ColumnPropNameInRow="eToMeasure" msprop:Generator_ColumnVarNameInTable="columneToMeasure" msprop:Generator_ColumnPropNameInTable="eToMeasureColumn" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="CurrentHeight" msprop:Generator_UserColumnName="CurrentHeight" msprop:Generator_ColumnVarNameInTable="columnCurrentHeight" msprop:Generator_ColumnPropNameInRow="CurrentHeight" msprop:Generator_ColumnPropNameInTable="CurrentHeightColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="CurrentCapacity" msprop:Generator_UserColumnName="CurrentCapacity" msprop:Generator_ColumnVarNameInTable="columnCurrentCapacity" msprop:Generator_ColumnPropNameInRow="CurrentCapacity" msprop:Generator_ColumnPropNameInTable="CurrentCapacityColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IsDeleted" msprop:Generator_UserColumnName="IsDeleted" msprop:Generator_ColumnPropNameInRow="IsDeleted" msprop:Generator_ColumnVarNameInTable="columnIsDeleted" msprop:Generator_ColumnPropNameInTable="IsDeletedColumn" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ContainerType" msprop:Generator_UserTableName="ContainerType" msprop:Generator_RowDeletedName="ContainerTypeRowDeleted" msprop:Generator_RowChangedName="ContainerTypeRowChanged" msprop:Generator_RowClassName="ContainerTypeRow" msprop:Generator_RowChangingName="ContainerTypeRowChanging" msprop:Generator_RowEvArgName="ContainerTypeRowChangeEvent" msprop:Generator_RowEvHandlerName="ContainerTypeRowChangeEventHandler" msprop:Generator_TableClassName="ContainerTypeDataTable" msprop:Generator_TableVarName="tableContainerType" msprop:Generator_RowDeletingName="ContainerTypeRowDeleting" msprop:Generator_TablePropName="ContainerType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContainerTypeId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ContainerTypeId" msprop:Generator_ColumnVarNameInTable="columnContainerTypeId" msprop:Generator_ColumnPropNameInRow="ContainerTypeId" msprop:Generator_ColumnPropNameInTable="ContainerTypeIdColumn" type="xs:long" />
+              <xs:element name="ContainerTypeName" msprop:Generator_UserColumnName="ContainerTypeName" msprop:Generator_ColumnVarNameInTable="columnContainerTypeName" msprop:Generator_ColumnPropNameInRow="ContainerTypeName" msprop:Generator_ColumnPropNameInTable="ContainerTypeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ContainerKind" msprop:Generator_UserColumnName="ContainerKind" msprop:Generator_ColumnVarNameInTable="columnContainerKind" msprop:Generator_ColumnPropNameInRow="ContainerKind" msprop:Generator_ColumnPropNameInTable="ContainerKindColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Capacity" msprop:Generator_UserColumnName="Capacity" msprop:Generator_ColumnVarNameInTable="columnCapacity" msprop:Generator_ColumnPropNameInRow="Capacity" msprop:Generator_ColumnPropNameInTable="CapacityColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Height" msprop:Generator_UserColumnName="Height" msprop:Generator_ColumnVarNameInTable="columnHeight" msprop:Generator_ColumnPropNameInRow="Height" msprop:Generator_ColumnPropNameInTable="HeightColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Width" msprop:Generator_UserColumnName="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnPropNameInTable="WidthColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Length" msprop:Generator_UserColumnName="Length" msprop:Generator_ColumnVarNameInTable="columnLength" msprop:Generator_ColumnPropNameInRow="Length" msprop:Generator_ColumnPropNameInTable="LengthColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Container" />
+      <xs:field xpath="mstns:ContainerId" />
+    </xs:unique>
+    <xs:unique name="ContainerType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ContainerType" />
+      <xs:field xpath="mstns:ContainerTypeId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
